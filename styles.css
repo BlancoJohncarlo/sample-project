@@ -1,0 +1,207 @@
+
+*{
+    margin: 0;
+}
+body{
+    background-color: #F7D3C3;
+}
+#header-img{
+    width: 60px;
+    object-fit: contain;
+}
+#nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff;
+    padding: 10px;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #6c7289;
+    padding: 0 10px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+}
+.the-product{
+    font-size: 25px;
+    margin-left: 10px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+#email-section{
+    margin-top: 100px;
+}
+input{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #FAEDE7;
+}
+#submit{
+    background-color: #FAEDE7;
+    color: #6c7289;
+    cursor: pointer;
+}
+section::before{
+    display: block;
+    content: "";
+    margin-top: -100px;
+    height: 100px;
+    visibility: hidden;
+    pointer-events: none;
+}
+section{
+    margin: 40px 20px;
+    text-align: center;
+
+}
+h2{
+    font-family: 'Fraunces', serif;
+    margin-bottom: 10px;
+}
+.icon{
+    color: #D01760;
+    margin-right: 30px;
+}
+#features{
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+#video{
+    width: 100%;
+}
+.product-image{
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    border: 1px solid #6c7289;
+    border-radius: 10px 10px 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.product1{
+    background-image: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1619389017i/57849897._UY2560_SS2560_.jpg);
+}
+.product2{
+    background-image: url(https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1611699721-tdw-bn-1611699705.jpg?crop=1xw:1xh;center,top&resize=768:*);
+}
+.product3{
+    background-image: url(https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1611700143-9780062931795.jpg?crop=1.00xw:0.955xh;0,0.0154xh&resize=768:*);
+}
+.card{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.inner-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+}
+.content{
+    font-family: 'Montserrat', sans-serif;
+    color:#6c7289 ;
+    margin-bottom:10px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.main-price{
+    margin-right: 20px;
+    font-size: 30px;
+    font-family: 'Fraunces', serif;
+    color: #D01760;
+}
+.old-price{
+    text-decoration: line-through;
+    color: #6c7289;
+
+}
+.author{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    color: #6c7289;
+    text-transform: uppercase;
+}
+.header{
+    font-family: 'Fraunces', serif;
+    margin: 10px 0;
+    color: #D01760;
+}
+.add{
+    background-color: #F7D3C3;
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    color: #6c7289;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 10px;
+
+}
+.add:hover {
+    color: #D01760;
+}
+
+@media screen and (min-width:600px) {
+    #nav-bar{
+        flex-direction: row;
+    }
+}
+@media only screen and (450px < width < 600px){
+    .card{
+        font-size: 0.85rem;
+    }
+    .product-image{
+        height: 400px;
+    }
+}
+@media only screen and (450px <= width){
+    .card{
+        display: flex;
+        max-width: 525px;
+    }
+    .inner-card{
+        width: 300px;
+        padding: 20px;
+    }
+    .product-image{
+        width: 400px;
+        border-radius: 10px 0 0 10px;
+    }
+}
+@media only screen and (width >= 1000px){
+    #video{
+        width: 70%;
+    }
+    .product-cards{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
